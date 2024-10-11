@@ -81,6 +81,9 @@ export default configure((ctx) => {
         ['vite-plugin-checker', {
           eslint: {
             lintCommand: 'eslint "./**/*.{js,mjs,cjs,vue}"'
+          },
+          overlay: {
+            initialIsOpen: false
           }
         }, { server: false }]
       ]
